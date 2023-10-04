@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle of Bosses - Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Bootstrap navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Circle of Bosses</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'events' %}">Events</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron" style="background-color: white;">
+        <h1>Welcome to Circle of Bosses</h1>
+        <img src="{% static 'cob.png' %}" alt="Circle of Bosses Logo">
+        <p>Cape Town's Hottest Hip-Hop Sensation</p>
+    </div>
+    
+
+
+    <!-- About section -->
+    <section>
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Circle of Bosses is a dynamic hip-hop music group hailing from the vibrant streets of Cape Town, 
+                South Africa. Known for their electrifying beats and thought-provoking lyrics, they have taken the 
+                music scene by storm. With a dedicated fan base and a passion for delivering powerful music, Circle of
+                 Bosses is here to stay.</p>
+        </div>
+    </section>
+
+    <!-- Latest News section -->
+    <section>
+        <div class="container">
+            <h2>Latest News</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card event-card">
+                        <img src="{% static 'cob show.jpg' %}" alt="Concert Poster">
+                        <div class="card-body">
+                            <h5 class="card-title">Upcoming Concert</h5>
+                            <p class="card-text">Don't miss our next live concert in Cape Town. Get ready for an unforgettable night of hip-hop music.</p>
+                            <a href="{% url 'events' %}" class="btn btn-primary">Get Tickets</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card event-card">
+                        <img src="{% static 'cob cover1.jpg' %}" alt="Album Release">
+                        <div class="card-body">
+                            <h5 class="card-title">New Album Release</h5>
+                            <p class="card-text">Our latest album is out now! Stream it on your favorite platforms and let the music speak for itself.</p>
+                            <a href="#" class="btn btn-primary">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Band Pictures section -->
+    <section>
+        <div class="container">
+            <h2>Band Pictures</h2>
+            <div class="band-pictures">
+                <img src="{% static 'cob2.jpeg' %}" alt="Band 1">
+                <img src="{% static 'cob3.jpg' %}" alt="Band 2">
+                <img src="{% static 'cob4.jpg' %}" alt="Band 3">
+                <img src="{% static 'cob5.jpg' %}" alt="Band 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            &copy; {{ 2023 }} Circle of Bosses
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS scripts (for dropdown menus, etc.) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* styles.css */
+
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/static/fonts/customfont.woff') format('woff'); /* Use the correct relative or absolute path */
+    /* Add other font formats if needed (e.g., woff2, ttf) */
+}
+
+
+.jumbotron {
+    background-color: white;
+    text-align: center;
+    padding: 100px 0;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.jumbotron-content {
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    font-family: 'Baloo 2', cursive;
+}
+
+.jumbotron img {
+    width: 600px;
+    vertical-align: middle;
+    margin: 5px 0;
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    font-family: 'CustomFont', sans-serif;
+    transition: background-color 0.3s;
+    background-image: url('path/to/your/logo.png');
+    background-size: contain; /* or cover, depending on your design */
+    background-position: center top; /* Adjust as needed */
+    height: 120px; /* Adjust the height as needed */
+}
+
+/* Style the navigation links */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000; /* Black text color */
+    font-weight: bold;
+    font-family: 'CustomFont', sans-serif; /* Apply the custom font */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #ff9900; /* Change text color on hover to orange */
+}
+
+/* Style the section content */
+section {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'CustomFont', sans-serif; /* Apply the custom font */
+    background-color: #f0f0f0; /* Light gray background color */
+    border-radius: 10px; /* Rounded corners for sections */
+    margin-bottom: 20px; /* Add spacing between sections */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow for sections */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center content vertically */
+}
+
+/* CSS styles for index.html */
+
+/* Style the band pictures container */
+.band-pictures {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+}
+
+/* Style the band pictures */
+.band-pictures img {
+    width: 300px; /* Set a fixed width for all images */
+    height: 300px; /* Set a fixed height for all images */
+    margin: 10px;
+    border: 2px solid #ffffff; /* Add a white border around the band pictures */
+    border-radius: 5px; /* Rounded corners for the border */
+    transition: transform 0.3s; /* Smooth transform (scale) transition on hover */
+}
+
+/* Apply the scaling effect on hover */
+.band-pictures img:hover {
+    transform: scale(1.1); /* Scale up the image by 10% on hover */
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-family: 'CustomFont', sans-serif; /* Apply the custom font */
+}

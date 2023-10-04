@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <img src="{% static 'cob.png' %}" alt="Band Logo">
+    <title>CircleOfBosses - About</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style about.css' %}">
+</head>
+<body>
+    <header>
+        <h1>About</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'events' %}">Events</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Our Story</h2>
+        <p>Circle of Bosses is not just a hip-hop group; it's a movement, a collective of talented individuals 
+            brought together by their love for music and their desire to make an impact on the Cape Town hip-hop scene.
+             Formed in the vibrant streets of Cape Town, South Africa, Circle of Bosses is a fusion of creativity, 
+             storytelling, and lyrical prowess. Comprising four distinct talents - Meezy Maps, CJ, Young Eddy, and 
+             Glimpse - each member brings a unique flavor to the group, creating a dynamic synergy that sets them apart.
+
+
+            Our music is more than just beats and rhymes; it's a reflection of the realities, dreams, and aspirations 
+            of the streets we call home. From sold-out gigs to chart-topping tracks, Circle of Bosses has rapidly risen
+             to prominence, captivating audiences with their electrifying performances and socially conscious lyrics.
+              We invite you to join us on this musical journey as we continue to push the boundaries of hip-hop, one 
+              verse at a time. Circle of Bosses is more than a name; it's a promise of innovative, authentic, and 
+              soul-stirring music that resonates with the heart of Cape Town.</p>
+        
+    </section>
+
+    <footer>
+        &copy; {{ 2023 }} CircleOfBosses
+    </footer>
+</body>
+</html>

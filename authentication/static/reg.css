@@ -1,0 +1,72 @@
+/* login.css */
+
+/* Style the form container */
+form {
+    background-color: #ffebeb;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style form elements */
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+form input[type="text"],
+form input[type="password"] {
+    width: 80%; 
+}
+
+/* Style the login button */
+form button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the registration link */
+p a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Add a subtle border to form elements on focus */
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #007BFF;
+}

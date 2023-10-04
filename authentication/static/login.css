@@ -1,0 +1,42 @@
+/* login.css */
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+}
+
+.container {
+    width: 600x;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+    border: 1px solid #ffffff; /* Border color for the logo container */
+    border-radius: 10px; /* Rounded corners for the logo container */
+    padding: 3px; /* Add some padding around the logo */
+    width: 100%; /* Set the width to 100% to fit within the container */
+    height: auto; /* Let the height adjust proportionally */
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    color: #04AA6D; 
+}
+
+
